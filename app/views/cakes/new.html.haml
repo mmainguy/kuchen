@@ -1,0 +1,9 @@
+-labelled_form_for :cake, @cake, :url => {:action=>:create} do |f|
+  =raw f.text_field :name
+  =raw f.text_field :description
+  =raw f.submit
+
+-labelled_multipart_form_for :cake, @cake, :url => {:action=>:upload_photo} do |f|
+  =raw f.file_field :photo
+  =raw f.submit
+

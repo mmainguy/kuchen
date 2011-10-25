@@ -1,0 +1,13 @@
+#content
+
+  %section.cake.special
+    %h1
+      Today We're baking...
+    %div.name
+      %h3
+        = @special.name
+    %div.description
+      = @special.description
+      = button_to 'Bid', cakes_path( :id => @special.id ), :method => :bid
+      = button_to 'Delete', cakes_path( :id => @special.id ), :method => :delete
+  %section.cake.older

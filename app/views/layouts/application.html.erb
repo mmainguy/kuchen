@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kuchen</title>
+    <%= stylesheet_link_tag :all %>
+    <%= javascript_include_tag :defaults %>
+    <%= csrf_meta_tag %>
+</head>
+<body>
+<div id='outer_content'>
+    <div id="header">
+        <nav>
+            <div><a href="#">
+                <img id='about' src='/images/sekt.jpg'/>
+                About us
+            </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img id='like' src='/images/apfel.jpg'/>
+                    Like
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img id='contact' src='/images/apfel2.jpg'/>
+                    Contact
+                </a>
+
+            </div>
+
+            <!--<img src='/images/germany.png'/><img src='/images/usa.png'/>-->
+    </div>
+
+    <%= yield %>
+
+</div>
+</body>
+</html>
