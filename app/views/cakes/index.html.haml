@@ -10,4 +10,6 @@
       = @special.description
       = button_to 'Bid', cakes_path( :id => @special.id ), :method => :bid
       = button_to 'Delete', cakes_path( :id => @special.id ), :method => :delete
+    %div.photos
+      = image_tag @special.cake_photos.first.photo.url(:thumb)
   %section.cake.older

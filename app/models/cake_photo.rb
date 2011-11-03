@@ -1,4 +1,4 @@
-class Cake < ActiveRecord::Base
+class CakePhoto < ActiveRecord::Base
    belongs_to :cake
    has_attached_file :photo,
     :styles => {
